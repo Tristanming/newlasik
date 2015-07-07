@@ -2,10 +2,28 @@ var _DATA = [{"id":1,"cityKey":"ANQING","cityName":"\u5b89\u5e86","hospital":"\u
 
 var ilasik = {
   test: function(){
-	ilasik.setCookie("lang","cn",2592000);
-	alert(ilasik.getCookie('lang'));
-	//ilasik.clearCookie("lang");                 
+	//ilasik.setCookie("lang","cn",2592000);
 	//alert(ilasik.getCookie('lang'));
+	//ilasik.clearCookie("lang");                 
+  },
+  initLang: function(){	  
+	//console.debug(ilasik.getCookie('lang'));
+	$('.logo .language').delegate(".chinese","click",function(){
+		ilasik.setCookie("lang","cn",2592000);
+		//console.debug(window.location.href);
+		$(this).attr('href', window.location.href.replace("/en/","/"));
+	});
+	$('.logo .language').delegate(".english","click",function(e){
+		ilasik.setCookie("lang","en",2592000);
+		if (window.location.href.lastIndexOf('/en/') == -1) {			
+			var idx = window.location.href.lastIndexOf('/');
+			$(this).attr('href', window.location.href.substr(0,idx+1) + 'en' +  window.location.href.substr(idx));
+		}
+		else {
+			$(this).attr('href', window.location.href);
+		}
+	});
+	$('.mainLink .mLink3').attr('href', 'mailto:doctor@ilasik-amo.com');
   },
   
   //取得cookie
@@ -231,8 +249,8 @@ var ilasik = {
   quiz: function(city, curpage) {
 	for(var i=1;i<=60;i++) {
 		$('#sel1').append('<option>近视'+(i*25)+'度</option>');
-		$('#sel2').append('<option>近视'+(i*25)+'度</option>');
-		$('#sel3').append('<option>近视'+(i*25)+'度</option>');
+		$('#sel2').append('<option>远视'+(i*25)+'度</option>');
+		$('#sel3').append('<option>散光'+(i*25)+'度</option>');
 	}
 	
 	var $testLink =  $('.testilasikBox .testItem .answer a');

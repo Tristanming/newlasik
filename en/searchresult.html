@@ -31,37 +31,28 @@
 		<div class="mainContent">
       <div class="searchresultBox">
         <div class="searchresultItem1">
-          <div class="hdr">找到 “<span id="lblSearchKey">全部</span>”相关<span id="lblSearchCnt">307</span>个</div>
+          <div class="hdr">About "<span id="lblSearchKey">All</span>" <span id="lblSearchCnt">307</span> results</div>
           <div class="cont clearFix">
             <span class="col1">Districts:</span>
             <span class="col2"><a class="all cur" href="searchresult.html?city=">All</a></span>
             <div class="col3">
               <ul class="searchcity">
-                <!--<li><a href="">淮安</a></li>
-                <li><a href="">淮北</a></li>
-                <li><a href="">怀化</a></li>
-                <li><a href="">呼和浩特</a></li>
-                <li><a href="">惠州</a></li>
-                <li><a href="">湖州</a></li>
-                <li><a href="">佳木斯</a></li>
-                <li><a href="">建湖</a></li>
-                <li><a href="">吉林</a></li>
-                <li><a href="">即墨</a></li>-->
               </ul>
             </div>
           </div>
         </div>
         <div class="searchresultItem2">
-          <span class="col1">Top searches：</span>
+          <span class="col1">Top searches:</span>
           <div class="col2">
             <ul class="clearFix">
-              <li><a href="searchresult.html?city=BEIJING">北京</a></li>
-              <li><a href="searchresult.html?city=SHANGHAI">上海</a></li>
-              <li><a href="searchresult.html?city=GUANGZHOU">广州</a></li>
-              <li><a href="searchresult.html?city=SHENZHEN">深圳</a></li>
-              <li><a href="searchresult.html?city=CHENGDU">成都</a></li>
-              <li><a href="searchresult.html?city=HAERBIN">哈尔滨</a></li>
-              <li><a href="searchresult.html?city=SHENYANG">沈阳</a></li>
+              <li><a href="searchresult.html?city=BEIJING">BeiJing</a></li>
+              <li><a href="searchresult.html?city=SHANGHAI">ShangHai</a></li>
+              <li><a href="searchresult.html?city=GUANGZHOU">GuangZhou</a></li>
+              <li><a href="searchresult.html?city=SHENZHEN">ShenZhen</a></li>
+              <li><a href="searchresult.html?city=WUHAN">WuHan</a></li>
+              <li><a href="searchresult.html?city=CHENGDU">ChengDu</a></li>
+              <li><a href="searchresult.html?city=NANJING">NanJing</a></li>
+			  <li><a href="searchresult.html?city=HANGZHOU">HangZhou</a></li>
             </ul>
           </div>
         </div>
@@ -73,42 +64,12 @@
                 <th>Hospital</th>
                 <th>Site</th>
               </tr>
-              <!--<tr>
-                <td class="col1">[北京]</td>
-                <td class="col2">新华医院</td>
-                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
-              </tr>
-              <tr>
-                <td class="col1">[上海]</td>
-                <td class="col2">新华医院</td>
-                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
-              </tr>
-              <tr>
-                <td class="col1">[呼和浩特]</td>
-                <td class="col2">新华医院</td>
-                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
-              </tr>
-              <tr>
-                <td class="col1">[济南]</td>
-                <td class="col2">新华医院</td>
-                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
-              </tr>
-              <tr>
-                <td class="col1">[石家庄]</td>
-                <td class="col2">新华医院</td>
-                <td class="col3"><a href="">www.xinhuayiyuan.com</a></td>
-              </tr>-->
             </table>
           </div>
         </div>
         <div class="searchresultItem4 clearFix">
           <p class="tips">Warm tips: Specific surgical protocol should be subject to ophthalmologists' judgment.</p>
           <div class="pager" style="display:none;">
-            <!--<a class="prev" href="">上一页</a>
-            <a class="nml" href="">1</a>
-            <a class="nml" href="">2</a>
-            <a class="nml" href="">3</a>
-            <a class="next" href="">下一页</a>-->
           </div>
         </div>
       </div>
@@ -124,10 +85,11 @@
 	</div>
 
 
-<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
-<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" src="../js/common-en.js"></script>
 <script type="text/javascript">
   $(document).ready(function(){
+	ilasik.initLang();  
     //$('.nav a').eq(0).addClass('cur');
 	//alert(window.location.href);
 	var reg = new RegExp("(^|&)" + 'city' + "=([^&]*)(&|$)");
