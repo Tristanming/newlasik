@@ -2,9 +2,45 @@ var _DATA = [{"id":1,"cityKey":"ANQING","cityName":"\u5b89\u5e86","hospital":"\u
 
 var ilasik = {
   test: function(){
-
+	ilasik.setCookie("lang","cn",2592000);
+	alert(ilasik.getCookie('lang'));
+	//ilasik.clearCookie("lang");                 
+	//alert(ilasik.getCookie('lang'));
   },
   
+  //取得cookie
+  getCookie: function(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');    
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];                      
+		while (c.charAt(0)==' ') {          
+			c = c.substring(1,c.length);
+		}
+		if (c.indexOf(nameEQ) == 0) {
+			return decodeURI(c.substring(nameEQ.length,c.length));
+		}
+	}
+	return false;
+  },
+  
+  //清除cookie
+  clearCookie: function(name) {
+	ilasik.setCookie(name, "", -1);
+  },
+
+  //设置cookie
+  setCookie: function(name, value, seconds) {
+	seconds = seconds || 0;
+	var expires = "";
+	if (seconds != 0 ) {
+		var date = new Date();
+		date.setTime(date.getTime()+(seconds*1000));
+		expires = "; expires="+date.toGMTString();
+	}
+	document.cookie = name+"="+encodeURI(value)+expires+"; path=/";
+  },
+
   faqSlide: function(){
     $('.faqItem .qu').on('click',function(e){
       if($(this).hasClass('cur')){
