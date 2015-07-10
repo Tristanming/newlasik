@@ -105,14 +105,14 @@ a:hover {
 .header .logo .language a:hover{color:#6baa2f;}
 .header .nav{width:1000px; height: 60px; margin: 0 auto;}
 .header .nav ul li{_display:inline; float: left;}
-.header .nav ul li a{display: block; text-decoration: none; font-weight: bold; padding: 0 15px; height: 60px; line-height: 60px; font-size: 12px; color:#3e3a39; font-family:Arial, Helvetica, sans-serif;
+.header .nav ul li a{display: block; text-decoration: none; font-weight: bold; padding: 0 19px; height: 60px; line-height: 60px; font-size: 12px; color:#3e3a39; font-family:Arial, Helvetica, sans-serif;
 -moz-transition:all .3s ease-out;
 -webkit-transition:all .3s ease-out;
 -o-transition:all .3s ease-out;
 -ms-transition:all .3s ease-out;
 transition:all .3s ease-out;
  }
-.header .nav ul li a.index{padding: 0 22px; }
+.header .nav ul li a.index{padding: 0 26px; }
 .header .nav ul li a:hover,.header .nav ul li a.cur{background-color: #545252; color:#6baa2f;}
 
 .content{background: url(../images/content_bg.gif) left top;}
