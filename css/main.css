@@ -105,7 +105,7 @@ a:hover {
 .header .logo .language a:hover{color:#6baa2f;}
 .header .nav{width:1000px; height: 60px; margin: 0 auto;}
 .header .nav ul li{_display:inline; float: left;}
-.header .nav ul li a{display: block; text-decoration: none; font-weight: bold; padding: 0 20px; height: 60px; line-height: 60px; font-size: 13px; color:#3e3a39; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;
+.header .nav ul li a{display: block; text-decoration: none; font-weight: bold; padding: 0 29px; height: 60px; line-height: 60px; font-size: 13px; color:#3e3a39; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif;
 -moz-transition:all .3s ease-out;
 -webkit-transition:all .3s ease-out;
 -o-transition:all .3s ease-out;
@@ -134,7 +134,7 @@ transition:all .3s ease-out;
 .indexBox .mainSlide{position:relative; width:980px; height:386px; overflow:hidden;}
 .indexBox .mainList{margin-top: 10px;}
 .indexBox .mainList a{text-decoration: none;}
-.indexBox .mainList a .btn{position: absolute; right:10px; bottom:10px; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; position:absolute; display:block; width:70px; text-align: center;  height: 20px; line-height: 20px; font-size:14px; color:#fff; background-color: #6dad2f; }
+.indexBox .mainList a .btn{position: absolute; right:10px; bottom:10px; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; display:block; width:70px; text-align: center;  height: 20px; line-height: 20px; font-size:14px; color:#fff; background-color: #6dad2f; }
 .indexBox .mainList .leftBar{_display:inline; width: 272px; float: left; }
 .indexBox .mainList .leftBar .link1{position: relative; display: block; width:272px; height: 347px; overflow: hidden;  }
 .indexBox .mainList .leftBar .link1 .btn{}
@@ -168,11 +168,12 @@ transition:all .3s ease-out;
 /* aboutilasik.html
 ----------------------------------------------*/
 .aboutilasikBox{}
-.aboutilasikBox a{display:block; border:1px solid #fff;}
+.aboutilasikBox a{display:block; border:1px solid #fff; position:relative;}
 .aboutilasikBox a:hover{border:1px solid #a6e866;}
 .aboutilasikBox a.link2{_display:inline; float: left; margin-top: 9px;}
 .aboutilasikBox a.link3{_display:inline; float: right; margin-top: 9px;}
-
+.aboutilasikBox a span{position: absolute; right:10px; bottom:10px; font-family:"Microsoft Yahei",Arial, Helvetica, sans-serif; display:block; width:70px; text-align: center;  height: 20px; line-height: 20px; font-size:14px; color:#fff; background-color: #6dad2f;}
+.aboutilasikBox a.link1 span{left:20px; right:auto; bottom:20px;}
 
 /* howilasik.html
 ----------------------------------------------*/
